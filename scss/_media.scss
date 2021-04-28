@@ -1,0 +1,175 @@
+@media(max-width:990px){
+  #header {
+    &-home {
+      height: 40rem;
+    }
+  }
+  .header-content {
+    padding-top: 20%;
+  }
+  .grid-work{
+    .item{
+      .text-wrap{
+        p{
+          font-size: .75rem;
+        }
+        h3{
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media(max-width:800px){
+  .header-content{
+    h1{
+      font-size: 2rem;
+    }
+  }
+  .grid-work{
+    .item{
+      .text-wrap{
+        h3{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  #home-b .stats{
+    grid-template-columns: 1fr;
+    div{
+      padding:2rem 0
+    }
+  }
+  #about{
+    &-a{
+      .grid-items{
+        margin-top: 2rem;
+        grid-template-columns: 1fr;
+        div:nth-child(2){
+          padding-bottom: 2rem;
+        }
+        .grid-span{
+          grid-column: 1;
+        }
+      }
+      
+    }
+    &-c{
+      display: none;
+    }
+    &-d{
+      .grid-test{
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  #contact{
+    button{
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width:690px) {
+  #header {
+    &-home{
+      background: $showcase-img no-repeat center center/cover;
+    }
+    &-inner {
+      height: 12rem;
+    }
+  }
+  .header-content{
+    h1{
+      font-size: 1.5rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+  }
+  #main-nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ul{
+      padding-top: 1rem;
+      li{
+        padding: .75rem;
+      }
+    }
+  }
+  .grid-work{
+    grid-template-columns: 1fr;
+    .item{
+      .text-wrap{
+        h3{
+          font-size: 1.75rem;
+        }
+      }
+    }
+  }
+  #home{
+    &-a{
+      .specials{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        p{
+          margin: 1rem 0;
+        }
+      }
+    }
+    &-c{
+      .content {
+        grid-template-columns: 1fr;
+        div{
+          h3{
+            font-size: 1.5rem;
+          }
+          p{
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  #contact{
+    form{
+      .form{
+        grid-template-areas:'Name' 'Email' 'Address' 'PhoneNumber' 'Message';
+      }
+    }
+  }
+  footer{
+    .footer-content{
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      p{
+        font-size: .75rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width:530px){
+  .header-content{
+    padding-top: 30%;
+  }
+  .grid-work{
+    .item{
+      .text-wrap{
+        p{
+          font-size: .75rem;
+        }
+        h3{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

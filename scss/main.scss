@@ -1,0 +1,578 @@
+@import "config";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  background-color: $body-color;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+img {
+  width: 100%;
+}
+
+// Utility Classes
+.container {
+  max-width: $width;
+  padding: 0 2rem;
+  margin: auto;
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+.lead {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: $dark-color;
+  color: $primary-color;
+}
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.5s all ease-in-out;
+}
+.btn {
+  &-primary {
+    @extend %btn-shared;
+    background: $primary-color;
+    color: $dark-color;
+  }
+  &-dark {
+    @extend %btn-shared;
+    background: $dark-color;
+    color: $light-color;
+  }
+  &-light {
+    @extend %btn-shared;
+    background: $light-color;
+    color: $dark-color;
+  }
+}
+
+.py {
+  &-1 {
+    padding: 1.5rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+}
+.my {
+  &-1 {
+    margin: 1.5rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  color: $light-color;
+}
+.bottom-line {
+  width: 3rem;
+  height: 2px;
+  background-color: $secondary-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+// percentages
+.photography {
+  width: $photography;
+  height: 100%;
+  background-color: $perc-color;
+}
+.adobe-photoshop {
+  width: $adobe-photoshop;
+  height: 100%;
+  background-color: $perc-color;
+}
+.adobe-illustrator {
+  width: $adobe-illustrator;
+  height: 100%;
+  background-color: $perc-color;
+}
+.html-css {
+  width: $html-css;
+  height: 100%;
+  background-color: $perc-color;
+}
+.wordpress {
+  width: $wordpress;
+  height: 100%;
+  background-color: $perc-color;
+}
+.magneto {
+  width: $magneto;
+  height: 100%;
+  background-color: $perc-color;
+}
+
+//navbar
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  img {
+    width: 70px;
+    height: 70px;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  li {
+    padding: 0.75rem 1.5rem;
+    a {
+      border-bottom: 3px transparent solid;
+      padding-bottom: 0.5rem;
+      transition: border-color 0.5s ease-in-out;
+      &.current {
+        border-color: $medium-color;
+      }
+      &:hover {
+        border-color: $primary-color;
+      }
+    }
+  }
+}
+
+#header {
+  &-home {
+    background: $showcase-img no-repeat center right/cover;
+    height: 100vh;
+  }
+  &-inner {
+    background: $showcase-img no-repeat 20% 30% / cover;
+    height: 6rem;
+    border-bottom: 5px solid $primary-color;
+  }
+}
+//showcase
+.header-content {
+  padding-top: 20%;
+  h1 {
+    padding-top: 1rem;
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  p {
+    padding: 1rem 0;
+    text-shadow: 1px 2px 4px #000000;
+    opacity: 0;
+    animation: color 3s forwards ease-in-out;
+    @keyframes color {
+      to {
+        opacity: 1;
+      }
+    }
+  }
+  a {
+    animation: trans ease-in-out 2s forwards;
+    transform: translateY(50px);
+    opacity: 0;
+    @keyframes trans {
+      to {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+  }
+  text-align: center;
+}
+
+//home a
+#home {
+  &-a {
+    h3 {
+      color: $light-color;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+    .specials {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      p {
+        color: $light-color;
+        font-size: 0.95rem;
+      }
+      .fas {
+        color: $secondary-color;
+        padding-bottom: 0.75rem;
+      }
+    }
+  }
+  &-b {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center;
+      text-align: center;
+      .fas {
+        color: #fff;
+        padding-bottom: 0.75rem;
+      }
+      div {
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 0;
+
+        h3 {
+          font-size: 1.3rem;
+        }
+        ul {
+          padding: 1rem 0;
+        }
+        li {
+          list-style: none;
+          color: $light-color;
+          line-height: 2;
+          p {
+            font-size: 2rem;
+          }
+        }
+        &:nth-child(even) {
+          background: $third-color;
+        }
+        &:nth-child(odd) {
+          background: $dark-color;
+        }
+      }
+    }
+  }
+  &-c {
+    p {
+      font-size: 1rem;
+      padding-bottom: 2rem;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      div {
+        h3 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: 0.75rem;
+        }
+        text-align: center;
+      } 
+      .icon-inner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: $dark-color;
+        font-size: 24px;
+        height: 15px;
+        width: 15px;
+        padding: 1rem;
+        border-radius: 50%;
+        line-height: 15px;
+        transition: all 0.5s ease-in-out;
+      }
+      .icon {
+        color: #fff;
+        position: relative;
+        width: 70px;
+        height: 70px;
+        background: $primary-color;
+        border-radius: 50%;
+        padding: 2rem;
+        text-align: center;
+        line-height: 70px;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          transform: scale(1.2, 1.2);
+          background: $dark-color;
+          .icon-inner {
+            background: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+//about section
+#about {
+  &-a {
+    h2,
+    p,
+    h3 {
+      text-align: center;
+    }
+    .grid-items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      text-align: center;
+      div:nth-child(n + 3) {
+        background: $dark-color;
+        padding: 2.5rem 1rem;
+      }
+      .grid-span {
+        grid-column: 2 / span 2;
+        background: $dark-color;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-left: 4px solid $primary-color;
+        h3 {
+          color: white;
+          font-size: 1.5rem;
+          padding: 1rem;
+          font-weight: 300;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+      i {
+        color: $primary-color;
+        padding: 1rem;
+      }
+      p {
+        color: $light-color;
+      }
+    }
+  }
+  &-b {
+    background-color: $dark-color;
+    margin-bottom: 0;
+    h4 {
+      padding: 0.5rem 0;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+    div div:nth-child(n + 2) {
+      width: 100%;
+      height: 1.1rem;
+      border-radius: 5px;
+      background: $light-color;
+      overflow: hidden;
+    }
+  }
+  &-c{
+    background: $dark-color;
+    margin-bottom: 2rem;
+    .grid-images{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      img{
+        width: 70%;
+      }
+    }
+  }
+  &-d{
+    .grid-test{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      color: $light-color;
+      gap: 2rem;
+      p{
+        font-size: 1rem;
+      }
+      & > div > p{
+        padding: 1rem;
+        border:1px solid $light-color;
+        border-radius: 5px;
+        margin: 1.2rem 0;
+      }
+      & > div{
+        
+        div{
+          display: flex;
+          align-items: center;
+          img{width: 50px;height: 50px;border-radius: 50%; margin-right:1rem;}
+        }
+      }
+    }
+  }
+}
+
+//work
+
+.grid-work{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  .item{
+    div:nth-child(1){
+      overflow: hidden;
+      position: relative;
+      top: 0;
+      left: 0;
+      img{
+        transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+      &::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: $dark-color;
+        position: absolute;
+        opacity: 0.9;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%) translateY(-130%) rotate(-28deg) scale(2);
+        transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1); 
+      }
+      &:hover::after{
+        transform: translateX(0) translateY(0) rotate(-28deg) scale(2);
+      }
+      .text-wrap{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        color: #fff;
+        transition: transform .5s .5s cubic-bezier(0.2, 1, 0.3, 1),opacity 1s cubic-bezier(0.2, 1, 0.3, 1) .2s; 
+        z-index: 1;
+        &:hover{
+         opacity: 1;
+        }
+        p{
+          font-size: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+//contact
+
+#contact{ 
+  button{
+    padding: 1rem;
+    width: 100%;
+    border: none;
+  }
+  form{
+    button{
+      &:hover{
+        background-color: $dark-color;
+        color: $primary-color;
+      }
+    }
+    .form{
+      display: none;
+      margin-bottom: 1rem;
+    display: grid;
+    grid-template-areas:'Name Email'
+    'Address PhoneNumber'
+    'Message Message';
+    gap: 1rem;
+    input,textarea{
+      font-size: 1rem;
+      color: $light-color;
+      padding: .5rem 2rem;
+      &:focus{
+        outline: none;
+      }
+      background: $body-color;
+      border: 2px solid $primary-color;
+      border-spacing: 15px;
+    }
+    input:nth-child(1){
+      grid-area: Name;
+    }
+    input:nth-child(2){
+      grid-area: Email;
+    }
+    input:nth-child(3){
+      grid-area: Address;
+    }
+    input:nth-child(4){
+      grid-area: PhoneNumber;
+    }
+    textarea{
+      grid-area: Message;
+    }
+  }
+  }
+
+}
+
+// Footer
+
+footer {
+  background: $dark-color;
+  color: $light-color;
+  // height: 50px;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-size: 1rem;
+    }
+    i {
+      padding: 0.75rem;
+      border: 2px solid $light-color;
+      border-radius: 50%;
+      transition: 0.3s all ease-in-out;
+      &:nth-child(-n + 3) {
+        margin-right: 1rem;
+      }
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
+@import "media";
