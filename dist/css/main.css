@@ -150,7 +150,11 @@ input[class^="btn-"]:hover {
   border-bottom: 5px solid #fedc97; }
 
 .header-content {
-  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   text-align: center; }
   .header-content h1 {
     padding-top: 1rem;
@@ -400,9 +404,11 @@ input[class^="btn-"]:hover {
   width: 100%;
   border: none; }
 
-#contact form button:hover {
-  background-color: #333;
-  color: #fedc97; }
+#contact form button {
+  margin-top: 1rem; }
+  #contact form button:hover {
+    background-color: #333;
+    color: #fedc97; }
 
 #contact form .form {
   display: none;
@@ -453,7 +459,8 @@ footer {
   #header-home {
     height: 40rem; }
   .header-content {
-    padding-top: 20%; }
+    padding-top: 20%;
+    display: block; }
   .grid-work .item .text-wrap p {
     font-size: .75rem; }
   .grid-work .item .text-wrap h3 {

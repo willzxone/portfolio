@@ -6,6 +6,7 @@
   }
   .header-content {
     padding-top: 20%;
+    display: block;
   }
   .grid-work{
     .item{
@@ -20,9 +21,6 @@
     }
   }
 }
-
-
-
 @media(max-width:800px){
   .header-content{
     h1{
