@@ -454,7 +454,7 @@ input[class^="btn-"]:active {
       left: 0;
       img{
         transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
-        &:hover,&:active{
+        &:hover,&:active,&:focus{
           transform: scale(1.2);
         }
       }
@@ -471,7 +471,7 @@ input[class^="btn-"]:active {
         transform: translateX(-100%) translateY(-130%) rotate(-28deg) scale(2);
         transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1); 
       }
-      &:hover::after,&:active::after{
+      &:hover::after,&:active::after,&:focus::after{
         transform: translateX(0) translateY(0) rotate(-28deg) scale(2);
       }
       .text-wrap{
@@ -488,7 +488,7 @@ input[class^="btn-"]:active {
         color: #fff;
         transition: transform .5s .5s cubic-bezier(0.2, 1, 0.3, 1),opacity 1s cubic-bezier(0.2, 1, 0.3, 1) .2s; 
         z-index: 1;
-        &:hover,&:active{
+        &:hover,&:active,&:focus{
          opacity: 1;
         }
         p{
@@ -511,7 +511,7 @@ input[class^="btn-"]:active {
   form{
     button{
       margin-top: 1rem;
-      &:hover,&:active{
+      &:hover,&:active,&:focus{
         background-color: $dark-color;
         color: $primary-color;
       }
@@ -576,7 +576,7 @@ footer {
       &:nth-child(-n + 3) {
         margin-right: 1rem;
       }
-      &:hover,&:active {
+      &:hover,&:active,&:focus {
         background-color: $secondary-color;
       }
     }
