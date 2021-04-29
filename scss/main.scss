@@ -173,8 +173,8 @@ input[class^="btn-"]:active {
 
 #header {
   &-home {
-    background: $showcase-img no-repeat center right/cover;
-    height: 100vh;
+      background: $showcase-img no-repeat center center/cover;
+      height: 100vh;
   }
   &-inner {
     background: $showcase-img no-repeat 20% 30% / cover;
