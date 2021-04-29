@@ -41,7 +41,9 @@ img {
 
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
-input[class^="btn-"]:hover {
+input[class^="btn-"]:hover,button[class^="btn-"]:active,
+a[class^="btn-"]:active,
+input[class^="btn-"]:active {
   background-color: $dark-color;
   color: $primary-color;
 }
@@ -323,7 +325,7 @@ input[class^="btn-"]:hover {
         text-align: center;
         line-height: 70px;
         transition: all 0.5s ease-in-out;
-        &:hover {
+        &:hover,&:active {
           transform: scale(1.2, 1.2);
           background: $dark-color;
           .icon-inner {
@@ -452,7 +454,7 @@ input[class^="btn-"]:hover {
       left: 0;
       img{
         transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
-        &:hover{
+        &:hover,&:hover{
           transform: scale(1.2);
         }
       }
@@ -469,7 +471,7 @@ input[class^="btn-"]:hover {
         transform: translateX(-100%) translateY(-130%) rotate(-28deg) scale(2);
         transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1); 
       }
-      &:hover::after{
+      &:hover::after,&:active::after{
         transform: translateX(0) translateY(0) rotate(-28deg) scale(2);
       }
       .text-wrap{
@@ -486,7 +488,7 @@ input[class^="btn-"]:hover {
         color: #fff;
         transition: transform .5s .5s cubic-bezier(0.2, 1, 0.3, 1),opacity 1s cubic-bezier(0.2, 1, 0.3, 1) .2s; 
         z-index: 1;
-        &:hover{
+        &:hover,&:active{
          opacity: 1;
         }
         p{
@@ -509,7 +511,7 @@ input[class^="btn-"]:hover {
   form{
     button{
       margin-top: 1rem;
-      &:hover{
+      &:hover,&:active{
         background-color: $dark-color;
         color: $primary-color;
       }
@@ -574,7 +576,7 @@ footer {
       &:nth-child(-n + 3) {
         margin-right: 1rem;
       }
-      &:hover {
+      &:hover,&:active {
         background-color: $secondary-color;
       }
     }
