@@ -405,9 +405,9 @@ const experience = {
           title: "Frontend Developer",
           company: "Visric Pvt. Ltd.",
           company_url: "https://www.visric.com/",
-          logo_path: "crest.png",
+          logo_path: "visric.png",
           duration: "March 2024 - Present",
-          location: "Islamabad, Faisalabad",
+          location: "Islamabad, Pakistan",
           description: `As a frontend developer, I have hands-on experience with Redux for state management, RTQ Query for efficient data fetching, Framer Motion for creating fluid animations, and Tailwind CSS for building responsive and customizable UI components. 
           I've also utilized various other React libraries to enhance functionality and user experience, contributing to the development of dynamic and engaging web applications.
           `,
@@ -418,9 +418,9 @@ const experience = {
           title: "Frontend Intern",
           company: "Visric Pvt. Ltd.",
           company_url: "https://www.visric.com/",
-          logo_path: "crest.png",
+          logo_path: "visric.png",
           duration: "Dec 2023 - Feb 2024",
-          location: "Islamabad, Faisalabad",
+          location: "Islamabad, Pakistan",
           description: `During my frontend internship, I gained proficiency in building dynamic web applications using React and Redux. I successfully integrated REST APIs to fetch and manage data, applying best practices in frontend development to ensure efficient and responsive user interfaces.`,
           color: "#FBBD18",
         },
