@@ -1,15 +1,13 @@
-import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
-import BlogsImg from "./BlogsImg";
-import { Fade } from "react-reveal";
-import "./ContactComponent.css";
-import { greeting, contactPageData } from "../../portfolio.js";
 import { style } from "glamor";
+import React from "react";
+import { Fade } from "react-reveal";
+import Footer from "../../components/footer/Footer";
+import Header from "../../components/header/Header";
+import SocialMedia from "../../components/socialMedia/SocialMedia";
+import { contactPageData, greeting } from "../../portfolio.js";
+import "./ContactComponent.css";
 
 const ContactData = contactPageData.contactSection;
-const blogSection = contactPageData.blogSection;
 
 function Contact(props) {
   const theme = props.theme;
@@ -56,7 +54,7 @@ function Contact(props) {
             </div>
           </div>
         </Fade>
-        <Fade bottom duration={1000} distance="40px">
+        {/* <Fade bottom duration={1000} distance="40px">
           <div className="blog-heading-div">
             <div className="blog-heading-text-div">
               <h1 className="blog-heading-text" style={{ color: theme.text }}>
@@ -78,7 +76,7 @@ function Contact(props) {
               <BlogsImg theme={theme} />
             </div>
           </div>
-        </Fade>
+        </Fade> */}
       </div>
       <Footer theme={props.theme} onToggle={props.onToggle} />
     </div>
