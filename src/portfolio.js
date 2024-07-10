@@ -15,7 +15,7 @@ const greeting = {
   nickname: "willzxone",
   full_name: "Waleed Asif",
   subTitle:
-    "React Developer, Component Wizard ⚛️. Building dynamic and responsive web applications.",
+    "Building robust digital solutions from front-end finesse to back-end brilliance ✨",
   resumeLink:
     "https://drive.google.com/file/d/1DSFFZJXDu2tz47AhkHFdXCTiz0suNAFM/view?usp=sharing",
   mail: "mailto:willzxone0987@gmail.com",
@@ -622,8 +622,7 @@ const projects = {
         },
         {
           name: "Live Demo",
-          url:
-            "https://akshitagupta15june.github.io/Keep-Calm-and-Carry-On.github.io/",
+          url: "https://akshitagupta15june.github.io/Keep-Calm-and-Carry-On.github.io/",
           iconifyClass: "mdi:web",
         },
       ],
