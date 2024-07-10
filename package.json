@@ -37,7 +37,6 @@
   "devDependencies": {
     "@iconify/icons-logos": "^1.2.36",
     "@iconify/react": "^5.0.1",
-    "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "prettier": "3.3.2",
     "react-scripts": "^5.0.1"
@@ -56,11 +55,6 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.json": "prettier-package-json --write",
