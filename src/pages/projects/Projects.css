@@ -57,11 +57,26 @@
 
 .repo-cards-div-main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  gap: 1.5rem 1.5rem;
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 60px;
+}
+
+/* Add height to the cards */
+.repo-cards-div-main > * {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* This will help ensure any card content stretches properly */
+.repo-cards-div-main > * > * {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media (max-width: 1380px) {
@@ -71,6 +86,10 @@
   }
   .projects-heading-sub-text {
     font-size: 25px;
+  }
+  
+  .repo-cards-div-main > * {
+    min-height: 280px;
   }
 }
 
@@ -101,5 +120,9 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 30px;
+  }
+  
+  .repo-cards-div-main > * {
+    min-height: 260px;
   }
 }

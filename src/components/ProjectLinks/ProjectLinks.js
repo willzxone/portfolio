@@ -13,7 +13,7 @@ function ProjectLinks(props) {
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons-languages">
-          {props.logos.map((logo) => {
+          {props?.logos?.map((logo) => {
             return (
               <OverlayTrigger
                 key={logo.name}
