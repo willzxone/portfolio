@@ -588,7 +588,7 @@ const projects = {
     {
       id: "0",
       name: "Eye On",
-      url: "https://github.com/harikanani/Keep-Calm-and-Carry-On.github.io",
+      url: "",
       description:
         "A deep learning-based system for accurate person tracking across multiple video streams. Utilized YOLO for real-time object detection and VIT for robust tracking and re-identification, even in crowded or occluded scenes.",
       languages: [
@@ -614,7 +614,7 @@ const projects = {
     {
       id: "1",
       name: "Craiveco",
-      url: "https://github.com/kevalvavaliya/Yog4Life",
+      url: "https://app.craiveco.com/customerapp/?qrcode=a81f2f",
       description:
         "At Visric, contributed to Craiveco, a multi-app restaurant platform with a customer app (real-time updates, bill-splitting), a restaurant app (menu, staff, orders, promotions), and an owner dashboard for multi-branch management—built using React.js, Next.js, and Tailwind CSS to enhance UI and operational efficiency.",
       languages: [
