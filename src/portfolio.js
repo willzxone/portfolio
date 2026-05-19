@@ -611,48 +611,48 @@ const projects = {
       ],
       links: [],
     },
-    {
-      id: "1",
-      name: "Craiveco",
-      url: "https://app.craiveco.com/customerapp/?qrcode=a81f2f",
-      description:
-        "At Visric, contributed to Craiveco, a multi-app restaurant platform with a customer app (real-time updates, bill-splitting), a restaurant app (menu, staff, orders, promotions), and an owner dashboard for multi-branch management—built using React.js, Next.js, and Tailwind CSS to enhance UI and operational efficiency.",
-      languages: [
-        {
-          name: "ReactJS",
-          iconifyClass: "logos-react",
-        },
-        {
-          name: "TailwindCSS",
-          iconifyClass: "logos-tailwindcss-icon",
-        },
-        {
-          name: "ExpressJS",
-          iconifyClass: "simple-icons:express",
-        },
-        {
-          name: "Redux",
-          iconifyClass: "logos-redux",
-        },
-        {
-          name: "Framer Motion",
-          iconifyClass: "logos-framer",
-        },
-        {
-          name: "NodeJs",
-          iconifyClass: "logos-nodejs",
-        },
-        {
-          name: "MongoDB",
-          iconifyClass: "logos-mongodb-icon",
-        },
-        {
-          name: "Socket.io",
-          iconifyClass: "logos-socket-io",
-        },
-      ],
-      links: [],
-    },
+    // {
+    //   id: "1",
+    //   name: "Craiveco",
+    //   url: "https://app.craiveco.com/customerapp/?qrcode=a81f2f",
+    //   description:
+    //     "At Visric, contributed to Craiveco, a multi-app restaurant platform with a customer app (real-time updates, bill-splitting), a restaurant app (menu, staff, orders, promotions), and an owner dashboard for multi-branch management—built using React.js, Next.js, and Tailwind CSS to enhance UI and operational efficiency.",
+    //   languages: [
+    //     {
+    //       name: "ReactJS",
+    //       iconifyClass: "logos-react",
+    //     },
+    //     {
+    //       name: "TailwindCSS",
+    //       iconifyClass: "logos-tailwindcss-icon",
+    //     },
+    //     {
+    //       name: "ExpressJS",
+    //       iconifyClass: "simple-icons:express",
+    //     },
+    //     {
+    //       name: "Redux",
+    //       iconifyClass: "logos-redux",
+    //     },
+    //     {
+    //       name: "Framer Motion",
+    //       iconifyClass: "logos-framer",
+    //     },
+    //     {
+    //       name: "NodeJs",
+    //       iconifyClass: "logos-nodejs",
+    //     },
+    //     {
+    //       name: "MongoDB",
+    //       iconifyClass: "logos-mongodb-icon",
+    //     },
+    //     {
+    //       name: "Socket.io",
+    //       iconifyClass: "logos-socket-io",
+    //     },
+    //   ],
+    //   links: [],
+    // },
     {
       id: "2",
       name: "Assets Allocator",
